@@ -1,6 +1,6 @@
 {% set name = "python-hostlist" %}
-{% set version = "1.17" %}
-{% set sha256 = "4e047076e14f935d9c9ba7de4d5735ec298554f23da11171a9faa2c80a580889" %}
+{% set version = "1.18" %}
+{% set sha256 = "64687c846f1c07e5c770acf60ce9b2b997c7b15968628734334277c5252f14e1" %}
 
 package:
   name: {{ name|lower }}
