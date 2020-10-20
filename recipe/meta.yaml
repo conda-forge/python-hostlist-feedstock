@@ -1,6 +1,6 @@
 {% set name = "python-hostlist" %}
-{% set version = "1.18" %}
-{% set sha256 = "64687c846f1c07e5c770acf60ce9b2b997c7b15968628734334277c5252f14e1" %}
+{% set version = "1.21" %}
+{% set sha256 = "32df95cd828062484eafeb898f7e7b27fc7aee8ed431b819ebc3fdc50f439ad4" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed  .
 
@@ -21,11 +21,11 @@ requirements:
     - pip
   run:
     - python
-    
+
 test:
   commands:
     - python run_test.py
-  
+
 about:
   home: https://www.nsc.liu.se/~kent/python-hostlist/
   license: GPL2+
