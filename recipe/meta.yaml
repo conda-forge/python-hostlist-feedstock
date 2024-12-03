@@ -1,13 +1,13 @@
 {% set name = "python-hostlist" %}
-{% set version = "1.22" %}
-{% set sha256 = "03e3f848f9824fe754e1cebdead3c9062cab0958209da9f811740b3ef707a599" %}
+{% set version = "2.2.1" %}
+{% set sha256 = "bbf7ca58835f84c6991084a661b409bc9cb3359c9f71be9b752442ba9225a0a5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
