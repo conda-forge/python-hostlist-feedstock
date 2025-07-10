@@ -1,6 +1,6 @@
 {% set name = "python-hostlist" %}
-{% set version = "2.2.1" %}
-{% set sha256 = "bbf7ca58835f84c6991084a661b409bc9cb3359c9f71be9b752442ba9225a0a5" %}
+{% set version = "2.2.2" %}
+{% set sha256 = "64fbef20dd9f5834135f8503ac3d35a544c063ea2cb98af88fd512ed16fbaa8a" %}
 {% set python_min = "3.6" %}
 
 package:
@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
